@@ -140,6 +140,21 @@
         </executions>
       </plugin>
 
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <includes>
+            <include>Sample.java</include>
+          </includes>
+          <excludes>
+            <exclude>**/TestCircle.java</exclude>
+            <exclude>**/TestSquare.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
         
@@ -524,6 +539,13 @@
         <artifactId>levigo-jbig2-imageio</artifactId>
         <version>${com.levigo.jbig2.levigo-jbig2-imageio.version}</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.7.1</version>
+      </dependency>
+
 
     </dependencies>
   </dependencyManagement>
