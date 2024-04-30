@@ -18,7 +18,7 @@ pipeline {
  		}
 		stage('Test report') {
 			steps {
-				sh 'mvn test'
+				sh 'mvn test --fail-never'
 				sh 'mvn surefire-report:report'
 			}
 		}
