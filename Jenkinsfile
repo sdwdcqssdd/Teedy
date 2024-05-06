@@ -26,11 +26,15 @@ pipeline {
 	
  	post {
  		always {
- 			archiveArtifacts artifacts: '**/target/site/**', fingerprint: true
- 			archiveArtifacts artifacts: '**/target/**/*.jar', fingerprint: true
- 			archiveArtifacts artifacts: '**/target/**/*.war', fingerprint: true
-			archiveArtifacts artifacts: '**/target/site/apidocs', fingerprint: true
-			archiveArtifacts artifacts: '**/target/site/surefire-report.html', fingerprint: true
+ 			archiveArtifacts artifacts: 'docs-core/target/docs-core-1.10-javadoc.jar', fingerprint: true
+ 			archiveArtifacts artifacts: 'docs-core/target/docs-core-1.10.jar', fingerprint: true
+ 			archiveArtifacts artifacts: 'docs-web/target/docs-web-1.10-javadoc.jar', fingerprint: true
+            archiveArtifacts artifacts: 'docs-web/target/docs-web-1.10.war', fingerprint: true
+            archiveArtifacts artifacts: 'docs-web-common/target/docs-web-common-1.10-javadoc.jar', fingerprint: true
+            archiveArtifacts artifacts: 'docs-web-common/target/docs-web-common-1.10-tests.jar', fingerprint: true
+            archiveArtifacts artifacts: 'docs-web-common/target/docs-web-common-1.10.jar', fingerprint: true
+ 			archiveArtifacts artifacts: '**/target/pmd.html', fingerprint: true
+ 			archiveArtifacts artifacts: '**/target/surefire-reports', fingerprint: true
  		}
  	}
  }
