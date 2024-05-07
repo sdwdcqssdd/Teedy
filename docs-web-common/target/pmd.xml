@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-07T23:33:38.202">
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/rest/util/ValidationUtil.java">
+<violation beginline="50" endline="65" begincolumn="19" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.rest.util" class="ValidationUtil" method="validateLength" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'validateLength(String, String, Integer, Integer, boolean)' has a cyclomatic complexity of 11.
+</violation>
+</file>
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/util/filter/CorsFilter.java">
+<violation beginline="15" endline="47" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.sismics.util.filter" class="CorsFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/util/filter/HeaderBasedSecurityFilter.java">
+<violation beginline="16" endline="45" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.sismics.util.filter" class="HeaderBasedSecurityFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/util/filter/RequestContextFilter.java">
+<violation beginline="29" endline="154" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.sismics.util.filter" class="RequestContextFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="74" endline="142" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="com.sismics.util.filter" class="RequestContextFilter" method="doFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'doFilter(ServletRequest, ServletResponse, FilterChain)' has a cyclomatic complexity of 17.
+</violation>
+</file>
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/util/filter/SecurityFilter.java">
+<violation beginline="31" endline="145" begincolumn="17" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.sismics.util.filter" class="SecurityFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+<file name="/mnt/c/Users/TangJiayang/Desktop/Teedy/docs-web-common/src/main/java/com/sismics/util/filter/TokenBasedSecurityFilter.java">
+<violation beginline="21" endline="109" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.sismics.util.filter" class="TokenBasedSecurityFilter" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+</file>
+</pmd>
